@@ -1,62 +1,50 @@
-**Overview:**
+# AmirBABA: Advanced Flight Booking Platform
 
-AmirBABA is a cutting-edge flight booking platform designed to streamline the interaction between passengers and airlines. 
-Developed using a micro-services architecture, this application not only facilitates robust scalability and service isolation 
-but also ensures tailored functionalities to cater to the distinct needs of its user groups.
+## Overview
 
-**Platform Highlights:**
+AmirBABA is an advanced flight booking platform that enhances the interaction between passengers and airlines through a microservices architecture. This platform offers scalable, isolated services that are specifically tailored to meet the diverse requirements of different user groups.
 
-**User-Friendly Registration System:** Features dedicated microservices for user registration, supporting both passengers and airlines. 
-New users can easily sign up with a username and password, integrating seamlessly into the platform.
- 
-**Dynamic Flight Management:** The Flight microservice allows airlines to add and manage their flights, providing a comprehensive overview of schedules. 
-Passengers logged into the system gain access to a real-time list of all available flights across various airlines, enabling them to make informed booking decisions.
- 
-**Efficient Ticketing Interface:** Through the Ticket microservice, passengers can book tickets and view their purchase history, while airlines can monitor ticket sales for their flights. 
-This service ensures that all transactions are handled smoothly, with immediate updates and confirmations.
- 
-**Seamless Front-End Experience:** The FrontEnd microservice handles all user interactions through a carefully designed interface, ensuring a smooth and responsive experience 
-across HTML and JSP files, supported by robust FrontEnd Servlets.
+## Platform Highlights
 
-**Technical Details:**
+### User-Friendly Registration System
+AmirBABA features a dedicated microservice for user registration, accommodating both passengers and airlines. New users can sign up effortlessly, using a username and password, and integrate seamlessly with the platform.
 
-**Dedicated Databases:** Each microservice, along with its own MySQL database, is containerized using Docker. This approach not only simplifies deployment across 
-different computing environments but also ensures consistency and scalability of the application infrastructure.
- 
-**Asynchronous and Synchronous Communications:** Utilizes Kubemq for asynchronous messaging between microservices, ensuring fast and reliable data transfer without 
-waiting for responses. For synchronous operations, a Kubernetes cluster facilitates direct, real-time communication among services, crucial for operations requiring 
-immediate data consistency.
- 
-**N-layer Architecture:** Each microservice is structured using an n-layer architecture, segregating business logic, data access, and user interface. 
-This separation enhances maintainability and allows for agile development and testing practices.
- 
-**Cloud Deployment and Kubemq Integration:** Hosted on Google Cloud, AmirBABA leverages the robustness of cloud infrastructure and employs Kubemq for 
-reliable inter-service messaging, guaranteeing that the system performs optimally even under high demand.
+### Dynamic Flight Management
+Our Flight microservice enables airlines to add and manage flight schedules comprehensively. Passengers logged into the system can view a real-time list of all available flights across various airlines, helping them make well-informed booking decisions.
 
+### Efficient Ticketing Interface
+The Ticket microservice allows passengers to book tickets and review their purchase history. Airlines benefit from this service as well, as it enables them to track ticket sales efficiently. All transactions are processed smoothly, ensuring immediate updates and confirmations.
 
-**Conclusion:**
+### Seamless Front-End Experience
+The FrontEnd microservice is responsible for all user interactions, providing a smooth and responsive experience through a well-designed interface that supports HTML and JSP files, backed by robust FrontEnd Servlets.
 
-AmirBABA merges the convenience of online booking with the efficiency of modern software architectures, making it an ideal choice for today’s fast-paced travel industry. 
-It provides a transparent, easy-to-navigate platform for both passengers planning their journeys and airlines managing their operations.
+## Technical Details
 
-**Tools Used:**
+### Dedicated Databases
+Each microservice operates its own MySQL database, containerized using Docker. This setup simplifies deployment across various environments and enhances the consistency and scalability of our application infrastructure.
 
-1- Java
+### Asynchronous and Synchronous Communications
+AmirBABA utilizes Kubemq for asynchronous messaging between microservices, which facilitates fast and reliable data transfer without requiring response waits. For synchronous operations, a Kubernetes cluster enables direct, real-time communication among services, essential for tasks that demand immediate data consistency.
 
-2- Apatche Tomcat
+### N-layer Architecture
+Our microservices are developed using an n-layer architecture, separating business logic, data access, and user interface layers. This architecture improves maintainability and supports agile development and testing practices.
 
-3- Ducker Container
+### Cloud Deployment and Kubemq Integration
+Hosted on the Google Cloud, AmirBABA benefits from the robustness of cloud infrastructure and utilizes Kubemq for efficient inter-service messaging. This ensures optimal performance, even under high demand.
 
-4- Kubernetes Cluster
+## Conclusion
 
-5- Kubmq Channel 
+AmirBABA combines the convenience of online booking with the efficiency of modern software architectures, positioning it as a top choice for today's dynamic travel industry. It offers a transparent, easy-to-navigate platform for passengers planning their journeys and airlines managing their operations.
 
-6- Google Cloud Environment
+## Tools Used
 
-7- MySQL Database
-
-8- HTML
-
-9- CSS
-
-10- Servlet
+1. Java
+2. Apache Tomcat
+3. Docker Containers
+4. Kubernetes Cluster
+5. Kubemq Channel
+6. Google Cloud Environment
+7. MySQL Database
+8. HTML
+9. CSS
+10. Servlet
